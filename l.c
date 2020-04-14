@@ -198,7 +198,7 @@ void enableAlarm(void) {
 void disableAlarm() {
 	if (oldInt4Ah == NULL) {
 		printf("Alarm is already disable or not set.\n");
-		return;
+		return; 
 	}
 	_disable();
 	setvect(0x4A, oldInt4Ah);
